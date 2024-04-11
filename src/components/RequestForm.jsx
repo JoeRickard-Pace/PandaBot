@@ -52,7 +52,7 @@ const RequestForm = ({ token }) => {
     <>
       <form onSubmit={handleSubmit}>
         <label >
-          <TextField className="prompt-text-box" type="text" onChange={handleChange} label="Question for PandaBot" variant="standard" multiline/>
+          <TextField className="prompt-text-box" type="text" onChange={handleChange} label="Question for PandaBot" variant="standard" />
         </label >
         <Button type="submit" variant="outlined">Next</Button>
       </form>
