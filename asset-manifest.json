@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PandaBot/static/css/main.42692be0.css",
+    "main.js": "/PandaBot/static/js/main.c89e565c.js",
+    "static/js/882.4716be54.chunk.js": "/PandaBot/static/js/882.4716be54.chunk.js",
+    "index.html": "/PandaBot/index.html",
+    "main.42692be0.css.map": "/PandaBot/static/css/main.42692be0.css.map",
+    "main.c89e565c.js.map": "/PandaBot/static/js/main.c89e565c.js.map",
+    "882.4716be54.chunk.js.map": "/PandaBot/static/js/882.4716be54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42692be0.css",
+    "static/js/main.c89e565c.js"
+  ]
+}
