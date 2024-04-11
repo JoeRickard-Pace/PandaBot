@@ -1,4 +1,5 @@
 import React from "react";
+import TextField from "@mui/material/TextField";
 
 const TokenSetter = ({ setToken }) => {
   const updateToken = (event) => {
@@ -13,7 +14,12 @@ const TokenSetter = ({ setToken }) => {
     <>
       <form onSubmit={handleSubmit}>
         <label>
-          Set Token: <input type="text" onChange={updateToken} />
+          <TextField
+            type="text"
+            onChange={updateToken}
+            label="Set Bearer Token"
+            variant="standard"
+          />
         </label>
       </form>
     </>

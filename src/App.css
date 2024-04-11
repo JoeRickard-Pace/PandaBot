@@ -23,7 +23,9 @@
   font-size: calc(1px + 2vmin);
   font-family: monospace;
   padding: 10%;
-
 }
 
+.prompt-text-box{
+  width: 30vw;
+}
 

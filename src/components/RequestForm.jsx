@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import {PulseLoader} from "react-spinners"
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 const RequestForm = ({ token }) => {
   const [spinner, setSpinner] = useState(false);
   const [prompt, setPrompt] = useState("");
@@ -48,11 +51,10 @@ const RequestForm = ({ token }) => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <label>
-          Question for PandaBot:
-          <input type="text" onChange={handleChange} />
-        </label>
-        <button type="submit">Next</button>
+        <label >
+          <TextField className="prompt-text-box" type="text" onChange={handleChange} label="Question for PandaBot" variant="standard" multiline/>
+        </label >
+        <Button type="submit" variant="outlined">Next</Button>
       </form>
       <p className="bot-response">
         {spinner ? <PulseLoader color="#f79421" /> : response}
