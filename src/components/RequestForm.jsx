@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {PulseLoader} from "react-spinners"
 const RequestForm = ({ token }) => {
   const [spinner, setSpinner] = useState(false);
   const [prompt, setPrompt] = useState("");
@@ -54,7 +54,9 @@ const RequestForm = ({ token }) => {
         </label>
         <button type="submit">Next</button>
       </form>
-      <p className="bot-response">{spinner ? "Loading" : response}</p>
+      <p className="bot-response">
+        {spinner ? <PulseLoader color="#f79421" /> : response}
+      </p>
     </>
   );
 };
